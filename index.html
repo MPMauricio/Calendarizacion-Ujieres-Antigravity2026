@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendarización General Ujieres 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Home View -->
+        <div id="home-view">
+            <div class="header">
+                <h1>CALENDARIZACIÓN GENERAL<br>UJIERES 2026</h1>
+                <p>Preparándonos para la misión del Señor</p>
+            </div>
+
+            <div class="quarters">
+                <div class="quarter" onclick="showQuarter(1)">
+                    <h2>Q1</h2>
+                    <p>ENERO – MARZO</p>
+                </div>
+                <div class="quarter" onclick="showQuarter(2)">
+                    <h2>Q2</h2>
+                    <p>ABRIL – JUNIO</p>
+                </div>
+                <div class="quarter" onclick="showQuarter(3)">
+                    <h2>Q3</h2>
+                    <p>JULIO – SEPTIEMBRE</p>
+                </div>
+                <div class="quarter" onclick="showQuarter(4)">
+                    <h2>Q4</h2>
+                    <p>OCTUBRE – DICIEMBRE</p>
+                </div>
+            </div>
+
+            <div class="meetings">
+                <div class="meeting meeting-1">
+                    <div class="meeting-header">PRIMERA REUNIÓN GENERAL, ENERO SABADO 24</div>
+                    <div class="meeting-content">
+                        <ul>
+                            <li>Bienvenida</li>
+                            <li>Normas de convivencia 2026</li>
+                            <li>Dinámicas</li>
+                            <li>Palabra</li>
+                            <li>Refrigerio</li>
+                            <li>Oración y Despedida</li>
+                        </ul>
+
+                        <div class="section">
+                            <h4>Enfoque</h4>
+                            <p>Indicaciones y compromisos que se requieren dentro del servicio de ujieres 2026,
+                                Formación de
+                                equipo de respuesta ante desastres naturales</p>
+                        </div>
+
+                        <div class="section">
+                            <h4>Objetivo</h4>
+                            <p>Mayor integración de los equipos, fortaleciendo el desarrollo relacional y espiritual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0 10 Q25 0 50 10 T100 10" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <!-- Meeting 2 -->
+                <div class="meeting meeting-2">
+                    <div class="meeting-header">SEGUNDA REUNIÓN GENERAL, MAYO</div>
+                    <div class="meeting-content">
+                        <ul>
+                            <li>Bienvenida</li>
+                            <li>Evaluación de servicio</li>
+                            <li>Dinámicas</li>
+                            <li>Palabra</li>
+                            <li>Refrigerio</li>
+                            <li>Oración y Despedida</li>
+                        </ul>
+                        <div class="section">
+                            <h4>Enfoque</h4>
+                            <p>Retroalimentación y ajustes del primer trimestre.</p>
+                        </div>
+                        <div class="section">
+                            <h4>Objetivo</h4>
+                            <p>Mejorar la excelencia en el servicio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0 10 Q25 0 50 10 T100 10" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+
+                <!-- Meeting 3 -->
+                <div class="meeting meeting-3">
+                    <div class="meeting-header">TERCERA REUNIÓN GENERAL, AGOSTO</div>
+                    <div class="meeting-content">
+                        <ul>
+                            <li>Bienvenida</li>
+                            <li>Capacitación Específica</li>
+                            <li>Planificación Q4</li>
+                            <li>Palabra</li>
+                            <li>Refrigerio</li>
+                            <li>Oración y Despedida</li>
+                        </ul>
+                        <div class="section">
+                            <h4>Enfoque</h4>
+                            <p>Fortalecimiento de habilidades y preparación para cierre de año.</p>
+                        </div>
+                        <div class="section">
+                            <h4>Objetivo</h4>
+                            <p>Capacitación técnica y espiritual.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator">
+                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                        <path d="M0 10 Q25 0 50 10 T100 10" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+
+                <!-- Meeting 4 -->
+                <div class="meeting meeting-4">
+                    <div class="meeting-header">CUARTA REUNIÓN GENERAL, NOVIEMBRE</div>
+                    <div class="meeting-content">
+                        <ul>
+                            <li>Bienvenida</li>
+                            <li>Agradecimiento anual</li>
+                            <li>Celebración</li>
+                            <li>Palabra de Cierre</li>
+                            <li>Refrigerio Especial</li>
+                            <li>Oración</li>
+                        </ul>
+                        <div class="section">
+                            <h4>Enfoque</h4>
+                            <p>Celebración de los logros del año y agradecimiento.</p>
+                        </div>
+                        <div class="section">
+                            <h4>Objetivo</h4>
+                            <p>Fomentar la unidad y gratitud en el equipo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar View (Hidden by default) -->
+        <div id="calendar-view" style="display: none;">
+            <div class="calendar-header">
+                <button class="back-btn" onclick="showHome()">← Volver</button>
+                <h2 id="quarter-title">Q1: ENERO – MARZO</h2>
+            </div>
+
+            <div id="months-grid" class="months-grid">
+                <!-- Months will be injected here by JS -->
+            </div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="dot group-A-color"></span> Grupo A</div>
+                <div class="legend-item"><span class="dot group-B-color"></span> Grupo B</div>
+                <div class="legend-item"><span class="dot group-C-color"></span> Grupo C</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+
+</html>
