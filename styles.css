@@ -375,3 +375,219 @@ body {
         padding: 2rem 1rem;
     }
 }
+
+/* ── Main Menu Styles ── */
+/* ── Main Menu Styles ── */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: #f1f5f9;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid #cbd5e1;
+    overflow-x: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout for icons/text */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    min-width: auto;
+    flex: 1;
+    /* Distribute space evenly */
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.menu-btn .icon {
+    font-size: 1.2rem;
+}
+
+.menu-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: #f8fafc;
+}
+
+.menu-btn:active {
+    transform: translateY(0);
+}
+
+.menu-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: #f8fafc;
+}
+
+.menu-btn .icon {
+    font-size: 1.8rem;
+}
+
+.menu-btn span:last-child {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* ── Manual Section Styles ── */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.sticky-header h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin: 0;
+}
+
+.manual-content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #334155;
+}
+
+.manual-cover {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 3rem 1rem;
+    background: #f1f5f9;
+    border-radius: 16px;
+}
+
+.manual-cover h2 {
+    font-size: 2.5rem;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+}
+
+.manual-cover .subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.manual-index {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.manual-index ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.manual-index li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.manual-index li:last-child {
+    border-bottom: none;
+}
+
+.manual-section,
+.manual-chapter {
+    margin-bottom: 3rem;
+}
+
+.manual-chapter h3 {
+    color: #1e40af;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 0.5rem;
+}
+
+.manual-content h4 {
+    color: #0f172a;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.manual-content h5 {
+    color: #334155;
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.manual-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+blockquote {
+    border-left: 4px solid #3b82f6;
+    background: #f8fafc;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #475569;
+}
+
+.manual-footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #cbd5e1;
+    text-align: center;
+}
+
+.sticky-footer {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+/* ── Sticky Button ── */
+.back-btn-sticky {
+    background: #1e40af;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+.back-btn-sticky:hover {
+    background: #1e3a8a;
+}
+
+.full-width {
+    width: 100%;
+    max-width: 300px;
+}

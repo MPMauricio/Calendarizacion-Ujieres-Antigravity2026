@@ -62,6 +62,11 @@ function showQuarter(quarterId) {
     document.getElementById('home-view').style.display = 'none';
     document.getElementById('calendar-view').style.display = 'block';
     
+    const pastoreoView = document.getElementById('pastoreo-view');
+    if(pastoreoView) pastoreoView.style.display = 'none';
+    const misionesView = document.getElementById('misiones-view');
+    if(misionesView) misionesView.style.display = 'none';
+    
     const quarterData = quarters[quarterId];
     document.getElementById('quarter-title').textContent = `${quarterData.name}: ${quarterData.label}`;
     
@@ -76,7 +81,51 @@ function showQuarter(quarterId) {
 
 function showHome() {
     document.getElementById('calendar-view').style.display = 'none';
+    const manualView = document.getElementById('manual-view');
+    if(manualView) manualView.style.display = 'none';
+    const pastoreoView = document.getElementById('pastoreo-view');
+    if(pastoreoView) pastoreoView.style.display = 'none';
+    const misionesView = document.getElementById('misiones-view');
+    if(misionesView) misionesView.style.display = 'none';
+    
     document.getElementById('home-view').style.display = 'block';
+    window.scrollTo(0, 0);
+}
+
+function showManual() {
+    document.getElementById('home-view').style.display = 'none';
+    document.getElementById('calendar-view').style.display = 'none';
+    const pastoreoView = document.getElementById('pastoreo-view');
+    if(pastoreoView) pastoreoView.style.display = 'none';
+    const misionesView = document.getElementById('misiones-view');
+    if(misionesView) misionesView.style.display = 'none';
+
+    document.getElementById('manual-view').style.display = 'block';
+    window.scrollTo(0, 0);
+}
+
+function showPastoreo() {
+    document.getElementById('home-view').style.display = 'none';
+    document.getElementById('calendar-view').style.display = 'none';
+    const manualView = document.getElementById('manual-view');
+    if(manualView) manualView.style.display = 'none';
+    const misionesView = document.getElementById('misiones-view');
+    if(misionesView) misionesView.style.display = 'none';
+
+    document.getElementById('pastoreo-view').style.display = 'block';
+    window.scrollTo(0, 0);
+}
+
+function showMisiones() {
+    document.getElementById('home-view').style.display = 'none';
+    document.getElementById('calendar-view').style.display = 'none';
+    const manualView = document.getElementById('manual-view');
+    if(manualView) manualView.style.display = 'none';
+    const pastoreoView = document.getElementById('pastoreo-view');
+    if(pastoreoView) pastoreoView.style.display = 'none';
+
+    document.getElementById('misiones-view').style.display = 'block';
+    window.scrollTo(0, 0);
 }
 
 function createMonthCalendar(year, monthIndex) {

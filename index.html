@@ -15,12 +15,30 @@
 
         <!-- Home View -->
         <div id="home-view">
+            <!-- Menu Principal Top Bar -->
+            <div class="main-menu top-bar">
+                <button class="menu-btn" onclick="showManual()">
+                    <span class="icon">📖</span>
+                    <span>Manual</span>
+                </button>
+                <button class="menu-btn" onclick="showPastoreo()">
+                    <span class="icon">🐑</span>
+                    <span>Pastoreo</span>
+                </button>
+                <button class="menu-btn" onclick="showMisiones()">
+                    <span class="icon">🌍</span>
+                    <span>Misiones</span>
+                </button>
+            </div>
+
             <div class="header">
                 <h1>CALENDARIZACIÓN GENERAL<br>UJIERES 2026</h1>
                 <p>Preparándonos para la misión del Señor</p>
             </div>
 
             <div class="quarters">
+                <!-- Menu Principal removed from here -->
+
                 <div class="quarter" onclick="showQuarter(1)">
                     <h2>Q1</h2>
                     <p>ENERO – MARZO</p>
@@ -169,6 +187,553 @@
                 <div class="legend-item"><span class="dot group-A-color"></span> Grupo A</div>
                 <div class="legend-item"><span class="dot group-B-color"></span> Grupo B</div>
                 <div class="legend-item"><span class="dot group-C-color"></span> Grupo C</div>
+            </div>
+        </div>
+
+        <!-- Manual View (Hidden by default) -->
+        <div id="manual-view" style="display: none;">
+            <div class="sticky-header">
+                <button class="back-btn-sticky" onclick="showHome()">← Volver al Inicio</button>
+                <h3>Instructivo para Ujieres</h3>
+            </div>
+
+            <div class="manual-content">
+                <div class="manual-cover">
+                    <!-- LOGO ADDED HERE -->
+                    <img src="logo_ujieres.png" alt="Logo Ujieres" class="manual-logo"
+                        style="max-width: 200px; margin-bottom: 2rem;">
+                    <h2>Instructivo para Ujieres</h2>
+                    <p class="subtitle">Iglesia Oasis de Gracia</p>
+                </div>
+
+                <div class="manual-index">
+                    <h4>Índice de Contenidos</h4>
+                    <ul>
+                        <li><a href="#cap1" onclick="return false;">Capítulo 1: Trasfondo Bíblico de los Ujieres</a>
+                        </li>
+                        <li><a href="#cap2" onclick="return false;">Capítulo 2: Atributos Personales del Ujier</a></li>
+                        <li><a href="#cap3" onclick="return false;">Capítulo 3: Roles de los Ujieres</a></li>
+                        <li><a href="#cap4" onclick="return false;">Capítulo 4: Disposiciones de la Iglesia Local</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="manual-divider">
+
+                <div class="manual-section">
+                    <h4>Objetivo</h4>
+                    <p>Servir con amor y excelencia a los asistentes al culto de adoración y otras actividades, para ser
+                        una iglesia saludable; y así poder cumplir nuestra visión de glorificar a Dios y la misión de
+                        proclamar el Evangelio y hacer discípulos desde Santa Ana hasta los confines de la tierra.</p>
+                </div>
+
+                <div class="manual-section">
+                    <h4>Introducción</h4>
+                    <p>Es un privilegio servir al Señor. Cada creyente está consciente que merecía la muerte eterna pero
+                        que la dádiva de Cristo Jesús ha sido la vida eterna por medio de su sacrificio en la cruz del
+                        calvario. Esta verdad nos lleva a amar a Dios, porque Él nos amó primero, y a servirlo con todo
+                        nuestro ser.</p>
+                    <p>El trabajo de los ujieres es de gran importancia para el desarrollo del culto de adoración y las
+                        diversas actividades de la Iglesia. En este instructivo se presentan 4 capítulos cuyo fin es
+                        equipar a los servidores de esta área de la iglesia para que puedan llevar a cabo su servicio
+                        con amor excelencia.</p>
+                </div>
+
+                <div id="cap1" class="manual-chapter">
+                    <h3>Capítulo 1: Trasfondo Bíblico de los Ujieres</h3>
+                    <h4>Introducción</h4>
+                    <p>El Diccionario de la Real Academia de la Lengua Española define el término ujier de la siguiente
+                        manera: “Portero que servía en un palacio, especialmente en la entrada de las habitaciones del
+                        rey”</p>
+                    <p>El término “ujier” no aparece en ningún lugar de las Sagradas Escrituras, pero las funciones de
+                        servicio que desempeña en la iglesia si aparecen en diferentes lugares de la Biblia.</p>
+
+                    <h4>Desarrollo</h4>
+                    <div class="subsection">
+                        <h5>1. En el Antiguo Testamento los porteros cumplían funciones similares a las de los ujieres.
+                        </h5>
+                        <p>En el Antiguo Testamento nos encontramos con una palabra muy parecida al término ujier, y es
+                            la palabra que tenemos traducida como portero (shoér):</p>
+                        <blockquote>
+                            <strong>2 Crónicas 8:14</strong> - Conforme a lo dispuesto por su padre David, Salomón
+                            asignó turnos a los sacerdotes... También fijó turnos a los porteros en cada puerta...
+                        </blockquote>
+                        <blockquote>
+                            <strong>2 Crónicas 23:19</strong> - También colocó porteros en la entrada del templo del
+                            Señor...
+                        </blockquote>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>2. Los ujieres deben reflejar hospitalidad.</h5>
+                        <blockquote>
+                            <strong>Romanos 12:13</strong> – Ayuden a los hermanos necesitados. Practiquen la
+                            hospitalidad.
+                        </blockquote>
+                        <p>La hospitalidad es definida como: “la virtud o cualidad que consiste en tratar bien, con
+                            amabilidad, al prójimo". Los ujieres al mostrar hospitalidad abren las puertas de nuestra
+                            iglesia para los invitados.</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>3. Los ujieres son embajadores de Cristo.</h5>
+                        <p>Usted debe recordar que todo lo que hace es en representación de Jesucristo.</p>
+                        <blockquote>
+                            <strong>2 Corintios 5:20</strong> – Así que somos embajadores de Cristo...
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div id="cap2" class="manual-chapter">
+                    <h3>Capítulo 2: Atributos Personales del Ujier</h3>
+                    <h4>Introducción</h4>
+                    <p>La primera iglesia cristiana creció aceleradamente, lo que generó la necesidad de servidores
+                        (Hechos 6:1-7). Se establecieron tres requisitos indispensables:</p>
+
+                    <div class="subsection">
+                        <h5>1. Buen Testimonio</h5>
+                        <p>Relacionado al carácter de Cristo (Gálatas 5:22-23). Los ujieres deben reflejar el fruto del
+                            Espíritu: amor, alegría, paz, paciencia, amabilidad, bondad, fidelidad, humildad y dominio
+                            propio.</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>2. Llenos del Espíritu Santo</h5>
+                        <p>Como servidores de Dios nuestro anhelo debe ser servir con la llenura del Espíritu Santo
+                            (Efesios 5:18). Debemos cuidar de no apagar el Espíritu (1 Tesalonicenses 5:19).</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>3. Llenos de Sabiduría</h5>
+                        <p>La sabiduría viene de Dios (Proverbios 2:6) y su Palabra (Salmos 19:7). Podemos pedirla a
+                            Dios confiadamente (Santiago 1:5).</p>
+                    </div>
+                </div>
+
+                <div id="cap3" class="manual-chapter">
+                    <h3>Capítulo 3: Roles de los Ujieres</h3>
+                    <h4>1. Áreas de atención</h4>
+                    <ul>
+                        <li><strong>Concentrarse en las personas:</strong> Bienvenida, ayuda, información, seguridad.
+                        </li>
+                        <li><strong>Concentrarse en el culto:</strong> Mantener el ambiente adecuado, evitar
+                            interrupciones.</li>
+                        <li><strong>Concentrarse en sí mismo:</strong> Presentación personal, amabilidad, limpieza.</li>
+                    </ul>
+
+                    <h4>2. Tareas principales</h4>
+                    <ul>
+                        <li>Organización como ministerio (Coordinador, Líderes).</li>
+                        <li>Tomar la iniciativa (prestar atención y actuar).</li>
+                        <li>Dar la bienvenida cálida.</li>
+                        <li>Ayudar a las personas a sentarse.</li>
+                        <li>Cuidar y mantener el orden en el parqueo.</li>
+                        <li>Llevar conteos y estadísticas.</li>
+                        <li>Preparar el Templo (30 min antes).</li>
+                    </ul>
+
+                    <h4>3. Preparación para Emergencias</h4>
+                    <ul>
+                        <li><strong>Emergencia Médica:</strong> Atender y buscar ayuda profesional/traslado.</li>
+                        <li><strong>Seguridad:</strong> Abordar sospechosos, contactar seguridad/policía.</li>
+                        <li><strong>Fuego:</strong> Usar extintores, reportar, evacuar, llamar Bomberos.</li>
+                        <li><strong>Terremoto:</strong> Mantener calma, despejar accesos, evacuar ordenadamente al
+                            parqueo.</li>
+                    </ul>
+                </div>
+
+                <div id="cap4" class="manual-chapter">
+                    <h3>Capítulo 4: Disposiciones de la Iglesia Local</h3>
+                    <h4>1. Ujieres Externos</h4>
+                    <ul>
+                        <li><strong>Puertas de acceso (1):</strong> Saludar y monitorear ingreso peatonal.</li>
+                        <li><strong>Parqueo (4):</strong> Recibir vehículos, estacionar, saludar, monitorear.</li>
+                        <li><strong>Seguridad (2):</strong> Baños/Canchas y Caseta de seguridad/Cámaras.</li>
+                    </ul>
+
+                    <h4>2. Ujieres Internos (5 mínimo)</h4>
+                    <ul>
+                        <li><strong>Recepción:</strong> Registro de visitas, peticiones (Hna. Almita de León).</li>
+                        <li><strong>Bienvenida (2 Diáconos + Pastor):</strong> Al final del culto, entregar recuerdo.
+                        </li>
+                        <li><strong>Acomodamiento (4):</strong> Un ujier por cada 3 bloques, acomodar y supervisar.</li>
+                        <li><strong>Multimedia/Cámaras:</strong> Monitoreo y alerta vía WhatsApp.</li>
+                    </ul>
+                </div>
+
+                <div class="manual-footer">
+                    <h4>Anexo: Código de vestimenta</h4>
+                    <p><strong>Varones:</strong> Camisa Blanca, pantalón negro y corbata negra.</p>
+                    <p><strong>Hermanas:</strong> Blusa blanca, falda o pantalón negro.</p>
+                </div>
+            </div>
+
+            <div class="sticky-footer">
+                <button class="back-btn-sticky full-width" onclick="showHome()">Volver al Inicio</button>
+            </div>
+        </div>
+
+        <!-- Pastoreo View (Hidden by default) -->
+        <div id="pastoreo-view" style="display: none;">
+            <div class="sticky-header">
+                <button class="back-btn-sticky" onclick="showHome()">← Volver al Inicio</button>
+                <h3>El Pastoreo de la Iglesia</h3>
+            </div>
+
+            <div class="manual-content">
+                <div class="manual-cover">
+                    <span style="font-size: 4rem;">🐑</span>
+                    <h2>El Pastoreo de la Iglesia Local</h2>
+                    <p class="subtitle">1 Pedro 5:1-3</p>
+                </div>
+
+                <div class="manual-chapter">
+                    <blockquote>
+                        <strong>1 Pedro 5:1-3</strong><br>
+                        "Ruego a los ancianos que están entre vosotros, yo anciano también con ellos, y testigo de los
+                        padecimientos de Cristo, que soy también participante de la gloria que será revelada: apacentad
+                        la grey de Dios que está entre vosotros, cuidando de ella, no por fuerza, sino voluntariamente;
+                        no por ganancia deshonesta, sino con ánimo pronto; no como teniendo señorío sobre los que están
+                        a vuestro cuidado, sino siendo ejemplos de la grey."
+                    </blockquote>
+
+                    <h4>Introducción</h4>
+                    <p>Todos los que hemos leído al menos un poco las Escrituras sabemos que la Biblia usa la
+                        ilustración del pastor y su rebaño para hablarnos del cuidado que Dios tiene por Su pueblo. Solo
+                        el Salmo 23 nos da un gran panorama cuando David dice: <em>Jehová es mi pastor nada me faltará,
+                            el estará conmigo, con el moraré por siempre.</em></p>
+                    <p>Por eso entendemos que el pastoreo es una labor muy importante en medio del pueblo de Dios, que
+                        como iglesia local debemos ser muy conscientes de la necesidad que cada creyente tiene de ser
+                        cuidado dentro de una iglesia local (redil) y también de participar en la comunión y cuidado con
+                        otros.</p>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>1. La importancia de la membresía en el pastoreo de la iglesia local</h3>
+                    <p><em>“apacentad [poimanino] la grey [rebaño] de Dios que está entre vosotros…”</em> (1 Pedro 5:2a)
+                    </p>
+                    <ul>
+                        <li><strong>Rebaño:</strong> Se refiere a un grupo de ovejas que forman parte del mismo grupo
+                            (redil); es decir, la comunidad de creyentes, la iglesia local.</li>
+                        <li><strong>Apacentad:</strong> Es la acción del cuidado pastoral sobre el rebaño. Se refiere a
+                            alimentar, velar y a la guianza espiritual de los pastores sobre una iglesia local.</li>
+                    </ul>
+
+                    <div class="section">
+                        <h5>Los ancianos son los responsables de apacentar</h5>
+                        <p>El pastoreo de la iglesia local no recae, ni es la actividad de un apóstol. Pedro en 5:1
+                            hablando del pastoreo del rebaño se ve también y habla de sí mismo como de un anciano
+                            <em>“presbutero”</em> más.
+                        </p>
+                        <p><strong>El instrumento es: Un sistema de membresía.</strong></p>
+                        <p>Si bien es cierto que los primeros responsables de pastorear son los ancianos, no debemos
+                            perder de vista que esta actividad en el seno de la iglesia local es una labor y actividad
+                            en la que todos los miembros tienen esa responsabilidad. Si no hay un sistema de membresía
+                            específico y claro, no hay manera de saber cuál es el rebaño sobre el cual hemos de dar
+                            cuentas los pastores.</p>
+                    </div>
+
+                    <div class="section">
+                        <h5>El pastoreo es una labor sobre un rebaño</h5>
+                        <p>Pedro está diciendo que este trabajo y responsabilidad de cuidar a las ovejas de Dios está
+                            enmarcado o limitado. No es a toda persona o creyente, sino que es muy específico cuando
+                            dice que es el rebaño que <strong>está entre ellos</strong>. No son cualquier hermanos, sino
+                            los hermanos de la iglesia local.</p>
+                        <blockquote>
+                            <strong>Hechos 20:28</strong> - Por tanto, mirad por vosotros, y por todo el rebaño en que
+                            el Espíritu Santo os ha puesto por obispos, para apacentar la iglesia del Señor, la cual él
+                            ganó por su propia sangre.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>2. La manera de llevar a cabo el pastoreo</h3>
+                    <p>No es un rebaño propio, sino ajeno. El dueño del rebaño “Dios” nos pedirá cuenta. Nos da tres
+                        instrucciones muy específicas:</p>
+
+                    <div class="subsection">
+                        <h5>• No por fuerza sino voluntariamente</h5>
+                        <p>Un llamado contra la pereza no debe ser motivado por presión. La obra de Dios no debe ser
+                            hecha con negligencia, a desgano. (Jer. 48:10, Mt 25:26)</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>• No por ganancia deshonesta sino con ánimo pronto</h5>
+                        <p>Este no es el motivo (ganar dinero) por el que un líder debería unirse al trabajo en la obra
+                            de Dios. Vemos en el N.T. que los maestros falsos siempre estaban motivados por el amor al
+                            dinero (2 Pedro 2:15).</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h5>• No como teniendo señorío sino como ejemplo</h5>
+                        <p>No usar técnicas de liderazgo para manipular, intimidar o amedrentar. El anciano no debe
+                            buscar su propio estatus, sino la edificación de otros. El verdadero liderazgo espiritual es
+                            por medio del ejemplo.</p>
+                        <blockquote>
+                            <strong>1 Timoteo 4:12</strong> - Ninguno tenga en poco tu juventud, sino sé ejemplo de los
+                            creyentes en palabra, conducta, amor, espíritu, fe y pureza.
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>La respuesta de la oveja (rebaño)</h3>
+                    <p><em>“estad sujetos a los ancianos; y todos sumisos unos a otros…”</em> (1 Pedro 5:5)</p>
+                    <p>Los ancianos deben poder reconocer claramente el rebaño y el rebaño debe reconocer a sus
+                        pastores. A través del sistema de membresía, cada miembro de la iglesia debe estar consciente de
+                        sus responsabilidades.</p>
+                    <blockquote>
+                        <strong>Hebreos 13:17</strong> - Obedeced a vuestros pastores, y sujetaos a ellos; porque ellos
+                        velan por vuestras almas...
+                    </blockquote>
+                    <p>La oveja debe tener una disposición voluntaria y sumisa para el cuidado pastoral, el cual se
+                        define por tres términos:</p>
+                    <ul>
+                        <li><strong>Presbuteros (Ancianos):</strong> Se refiere a la autoridad, al liderazgo.</li>
+                        <li><strong>Poimen (Pastores):</strong> Se refiere a alimentar, nutrir, enseñar la Palabra.</li>
+                        <li><strong>Episkopos (Obispos):</strong> El que vela por la integridad espiritual.</li>
+                    </ul>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>Conclusión</h3>
+                    <p>La MEMBRESÍA nos permite definir estas cosas de forma clara y tangible. Es un pacto de amor, un
+                        acuerdo mutuo donde un hermano manifiesta su deseo de unirse y la congregación lo acepta.</p>
+                </div>
+
+                <div class="manual-chapter"
+                    style="background: #f0f9ff; padding: 1.5rem; border-radius: 12px; border: 1px solid #bae6fd;">
+                    <h3>8 Aspectos Prácticos del Pastoreo Local</h3>
+                    <ol style="padding-left: 1.5rem; line-height: 1.6;">
+                        <li style="margin-bottom: 0.8rem;"><strong>Bautismo:</strong> Se realizará previo discipulado a
+                            hermanos que se añadirán a la iglesia local.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Comunión y servicio:</strong> Integrarse a un Grupo
+                            Pequeño de Discipulado (GPD). Unirse a un ministerio o equipo misional.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Constancias o carta pastoral:</strong> Deben ser
+                            miembros o estar en proceso del discipulado de pre-membresía.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Velas y funerales:</strong> Se ofrece a los miembros
+                            o su núcleo familiar. Si es miembro de otro rebaño, respetamos a sus líderes.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Dedicación de niños:</strong> Reservada
+                            exclusivamente a padres miembros o en proceso.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Ausencia prolongada:</strong> Sin justificación o
+                            aviso será tomada en cuenta para evaluar la continuidad de la membresía.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Cambio de membresía:</strong> Esperamos carta de
+                            retiro y aviso, moviéndose con bendición pastoral.</li>
+                        <li style="margin-bottom: 0.8rem;"><strong>Celebración de bodas:</strong> Para miembros o
+                            parejas que se moverán a la iglesia local. Requisitos:
+                            <ul style="margin-top: 0.5rem;">
+                                <li>Aviso previo (4-6 meses) para discipulado prematrimonial.</li>
+                                <li>Matrimonio fundado en la fe cristiana (ambos creyentes).</li>
+                                <li>Vínculo activo con la comunidad de fe (al menos uno debe ser miembro).</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p style="text-align: center; font-weight: bold; margin-top: 1rem;">🎵 Canto: “Somos iglesia”</p>
+                </div>
+
+            </div>
+
+            <div class="sticky-footer">
+                <button class="back-btn-sticky full-width" onclick="showHome()">Volver al Inicio</button>
+            </div>
+        </div>
+
+        <!-- Misiones View (Hidden by default) -->
+        <div id="misiones-view" style="display: none;">
+            <div class="sticky-header">
+                <button class="back-btn-sticky" onclick="showHome()">← Volver al Inicio</button>
+                <h3>Oración por las Misiones</h3>
+            </div>
+
+            <div class="manual-content">
+                <div class="manual-cover">
+                    <span style="font-size: 4rem;">🌍</span>
+                    <h2>Movilización Global de los GPD: "Haced Discípulos 2025-2026"</h2>
+                    <p class="subtitle">Iglesia Cristiana Oasis de Gracia Santa Ana</p>
+                </div>
+
+                <div class="manual-chapter">
+                    <p><strong>Mensaje a Líderes, Anfitriones y Equipo de Servicio GPD</strong></p>
+                    <p>Amados hermanos: Con inmenso gozo les presentamos los Proyectos Misionales que, como grupos
+                        pequeños de discipulado (GPD), tenemos el privilegio de adoptar y abrazar. Siguiendo el mandato
+                        de Hechos 1:8, nuestra visión abarca desde nuestra "Jerusalén" hasta "lo último de la tierra".
+                    </p>
+                    <p>Les animo en el nombre de nuestro Señor Jesús a que nos movilicemos juntos. A continuación,
+                        detallamos la asignación de cada proyecto para su adopción en oración y apoyo durante el año
+                        2026.</p>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>I. ÁREA GLOBAL: JERUSALÉN (Nuestra Ciudad)</h3>
+                    <p><em>Estos proyectos impactan directamente a nuestra comunidad local.</em></p>
+
+                    <div class="section">
+                        <h5>1. Taller de Costura</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Mujeres (Martes, Col. El Milagro).</li>
+                            <li><strong>Líder:</strong> Hna. Saraí de Mendoza.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h5>2. Proyecto Misional Compasión (Hospital Pediatría)</h5>
+                        <ul>
+                            <li><strong>Adoptan:</strong> GPD de Mujeres (Lunes, Iglesia) y GPD de Mujeres (Jueves).
+                            </li>
+                            <li><strong>Lugar:</strong> Auditorio de la Iglesia.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h5>3. Colegio Bellos Momentos</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD Mixto (Casa Hno. Antonio Martínez).</li>
+                            <li><strong>Discipuladora:</strong> Hna. Anita de Sandoval.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h5>4. Casitas Oasis</h5>
+                        <ul>
+                            <li><strong>Adoptan:</strong> GPD de Mujeres (Casa Hna. América) y GPD de Mujeres (Casa Hna.
+                                Juanita).</li>
+                            <li><strong>Lugar:</strong> Casa de Hna. América de Paniagua.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h5>5. Negocios como Misión</h5>
+                        <p>(Industrias Magaña, Inversiones Raquel, Textiles Rodríguez, Dilacsa y Taller García).
+                            <em>Proyectos de evangelismo empresarial, mantener en oración.</em>
+                        </p>
+                    </div>
+
+                    <div class="section">
+                        <h5>6. GHO (Campaña Médica) & 7. ABLE</h5>
+                        <p>Ministerios claves para la plantación de iglesias y apoyo económico/salud. Solicitamos
+                            intercesión constante.</p>
+                    </div>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>II. ÁREA GLOBAL: JUDEA (Nuestra Nación)</h3>
+
+                    <h4>Plantación de Iglesias (Nuevas Obras)</h4>
+                    <div class="section">
+                        <h5>1. Ahuachapán</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD Mixto (Casa Hna. Reinita Bolaños).</li>
+                            <li><strong>Hora:</strong> 4:00 PM.</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>2. El Congo</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD Mixto (Sábados, Casa Hna. Mariza de Hernández).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>3. Nuevo Amanecer</h5>
+                        <ul>
+                            <li><strong>Adoptan:</strong> GPD Mixto (Col. 15 de Septiembre) y GPD Mixto (Col. Cel).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>4. Texistepeque</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Mujeres (Casa Hna. Anita de Bárcenas).</li>
+                        </ul>
+                    </div>
+
+                    <h4>Iglesias Plantadas (Cobertura de Oración)</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li>📍 <strong>Sonsonate & Chalchuapa:</strong> Ujieres Grupo B (Hno. Mauricio Zúñiga).</li>
+                        <li>📍 <strong>La Magdalena, El Jute & Comecayo:</strong> Ujieres Grupo A (Hno. Mauricio
+                            Molina).</li>
+                        <li>📍 <strong>Atiquizaya:</strong> Ujieres Grupo C (Hno. Melvin Monge).</li>
+                    </ul>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>III. ÁREA GLOBAL: SAMARIA (América)</h3>
+                    <div class="section">
+                        <h5>1. Nicaragua (Somotillo)</h5>
+                        <p><strong>Misioneros:</strong> Elsita y Fredy Javier.</p>
+                        <ul>
+                            <li><strong>Adoptan:</strong> GPD Mixto (Hostal Hno. Jorge Godoy) y GPD de Parejas (Casa
+                                Hno. Luis Romero).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>2. Rama Kay (Comunidad Indígena)</h5>
+                        <p><strong>Misioneros:</strong> Mairon y Cándida McCrea.</p>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Parejas (Casa Familia García).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>3. México</h5>
+                        <p><strong>Misioneros:</strong> José Antonio y Marta Santamaría.</p>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Parejas (en la Iglesia).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>4. Chile y Guatemala</h5>
+                        <p>Clamamos a Dios por el ministerio de Paul, Grethel y Moisés Mejía.</p>
+                    </div>
+                </div>
+
+                <div class="manual-chapter">
+                    <h3>IV. ÁREA GLOBAL: LO ÚLTIMO DE LA TIERRA</h3>
+                    <div class="section">
+                        <h5>1. Kurdistán – Familia González</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Señoritas (Casa Hna. Raquel Romero).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>2. Macedonia (Tétovo) – Misioneros Fredito y Dayana</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD de Hombres (Casa Jonatan Valle).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>3. Etiopía – Jonathan y Endricka</h5>
+                        <ul>
+                            <li><strong>Adoptan:</strong> GPD de Parejas (Casa Pastor Carlos Polío) y GPD de Parejas
+                                (Casa Hno. Fredy Molina).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>4. Gil y Nani Javier</h5>
+                        <ul>
+                            <li><strong>Adopta:</strong> GPD Mixto (Hogar Hno. Gabo y Rocío Melara).</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h5>5. España, Macedonia (Skopje) e Irak</h5>
+                        <p>Familia Núñez, Familia Montes, Familia Murillo. Mantener siempre en oraciones.</p>
+                    </div>
+                </div>
+
+                <div class="manual-chapter"
+                    style="background: #ecfdf5; padding: 1.5rem; border-radius: 12px; border: 1px solid #6ee7b7;">
+                    <h3>Instrucciones de Servicio y Movilización</h3>
+                    <p><strong>Adopción:</strong> Cada GPD ha "adoptado" un proyecto y su equipo. Serán sus compañeros
+                        de batalla espiritual durante todo el 2026.</p>
+                    <p><strong>Prioridad:</strong> La oración constante es el motor de la misión.</p>
+                    <p><strong>Acción Mensual:</strong> Se espera que, al menos una vez al mes (cerca del tercer domingo
+                        misionero), el GPD realice actividades de promoción, oración y apoyo.</p>
+                    <p style="text-align: center; font-weight: bold; margin-top: 1rem;">Total: 28 Proyectos Misionales
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="sticky-footer">
+                <button class="back-btn-sticky full-width" onclick="showHome()">Volver al Inicio</button>
             </div>
         </div>
 
